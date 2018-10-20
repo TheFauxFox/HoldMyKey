@@ -45,6 +45,6 @@ else:
     hWnd = procHWND[procID[0]][0]
 
 win32api.SendMessage(hWnd, win32con.WM_RBUTTONDOWN, win32con.MK_RBUTTON, win32api.MAKELONG(0,0))
-print("Sent RMouse_Down to window %d, exiting")
+print("Sent RMouse_Down to window %d, exiting"%procID[0])
 sleep(1)
 sys.exit()
